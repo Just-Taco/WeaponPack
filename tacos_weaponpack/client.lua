@@ -1,12 +1,12 @@
 -- Created by Taco
 -- Created by Taco
-startet = true
+runnet = true
 
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(1)
         local Ped = GetPlayerPed(-1)
-        if startet == true then
+        if runnet == true then
                 if GetDistanceBetweenCoords(GetEntityCoords(Ped),-1913.4637451172,-574.24969482422,11.43514919281,true) <= 1 then
                     DrawText3D(-1913.4637451172,-574.24969482422,11.43514919281,"~w~Tryk [~g~E~w~] for at banke på døren")
                     if IsControlJustPressed(1, 38) then
@@ -31,7 +31,7 @@ Citizen.CreateThread(function()
         while true do
             Citizen.Wait(1)
             local Ped = GetPlayerPed(-1)
-            if startet == true then
+            if runnet == true then
                     if GetDistanceBetweenCoords(GetEntityCoords(Ped),-1902.0787353516,-572.36547851563,19.097217559814,true) <= 1 then
                         DrawText3D(-1902.0787353516,-572.36547851563,19.097217559814,"~w~Tryk [~g~E~w~] for at forlad stedet")
                         if IsControlJustPressed(1, 38) then
@@ -56,7 +56,7 @@ Citizen.CreateThread(function()
             while true do
                 Citizen.Wait(1)
                 local Ped = GetPlayerPed(-1)
-                if startet == true then
+                if runnet == true then
                         if GetDistanceBetweenCoords(GetEntityCoords(Ped),-1904.7473144531,-570.90942382813,19.097219467163,true) <= 1 then
                             DrawText3D(-1904.7473144531,-570.90942382813,19.097219467163,"~w~Tryk [~g~E~w~] for at tage lyd dæmper på")
                             if IsControlJustPressed(1, 38) then
@@ -81,7 +81,7 @@ Citizen.CreateThread(function()
                 while true do
                     Citizen.Wait(1)
                     local Ped = GetPlayerPed(-1)
-                    if startet == true then
+                    if runnet == true then
                             if GetDistanceBetweenCoords(GetEntityCoords(Ped),-1911.1778564453,-573.5966796875,19.097219467163,true) <= 1 then
                                 DrawText3D(-1911.1778564453,-573.5966796875,19.097219467163,"~w~Tryk [~g~E~w~] for at købe en pistol (2 Mil)")
                                 if IsControlJustPressed(1, 38) then
